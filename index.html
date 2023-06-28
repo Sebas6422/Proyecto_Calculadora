@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Calculadora</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <table class="calculadora">
+            <tr>
+                <td colspan="4"><span id="resultado">0</span></td>
+            </tr>
+            <tr>
+                <td><button id="num7" value="7" onclick="presionarN(document.getElementById('num7'))">7</button></td>
+                <td><button id="num8" value="8" onclick="presionarN(document.getElementById('num8'))">8</button></td>
+                <td><button id="num9" value="9" onclick="presionarN(document.getElementById('num9'))">9</button></td>
+                <td><button id="adicion" value="+" onclick="oper(document.getElementById('adicion'))">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="num4" value="4" onclick="presionarN(document.getElementById('num4'))">4</button></td>
+                <td><button id="num5" value="5" onclick="presionarN(document.getElementById('num5'))">5</button></td>
+                <td><button id="num6" value="6" onclick="presionarN(document.getElementById('num6'))">6</button></td>
+                <td><button id="sustraccion" value="-" onclick="oper(document.getElementById('sustraccion'))">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="num1" value="1" onclick="presionarN(document.getElementById('num1'))">1</button></td>
+                <td><button id="num2" value="2" onclick="presionarN(document.getElementById('num2'))">2</button></td>
+                <td><button id="num3" value="3" onclick="presionarN(document.getElementById('num3'))">3</button></td>
+                <td><button id="multiplicacion" value="x" onclick="oper(document.getElementById('multiplicacion'))">x</button></td>
+            </tr>
+            <tr>
+                <td><button id="num0" value="0" onclick="presionarN(document.getElementById('num0'))">0</button></td>
+                <td><button id="ac">C</button></td>
+                <td><button id="igual" onclick="realizar()">=</button></td>
+                <td><button id="division" value="/" onclick="oper(document.getElementById('division'))">/</button></td>
+            </tr>
+        </table>
+        <script></script>
+    </main>
+
+    <script src="/numero.js"></script>
+</body>
+</html>
